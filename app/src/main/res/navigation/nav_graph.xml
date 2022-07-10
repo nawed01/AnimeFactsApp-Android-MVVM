@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allAnimeFragment">
+
+    <fragment
+        android:id="@+id/allAnimeFragment"
+        android:name="com.nawed.animefacts.AllAnimeFragment"
+        android:label="fragment_all_anime"
+        tools:layout="@layout/fragment_all_anime" >
+        <action
+            android:id="@+id/action_allAnimeFragment_to_animeFactFragment"
+            app:destination="@id/animeFactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animeFactFragment"
+        android:name="com.nawed.animefacts.AnimeFactFragment"
+        android:label="fragment_anime_fact"
+        tools:layout="@layout/fragment_anime_fact" />
+</navigation>

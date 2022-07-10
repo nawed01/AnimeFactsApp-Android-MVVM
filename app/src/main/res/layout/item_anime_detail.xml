@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <ImageView
+        android:id="@+id/imageViewAnime"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/textViewAnimeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/imageViewAnime"
+        android:layout_margin="10dp"/>
+</RelativeLayout>
